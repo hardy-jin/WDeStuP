@@ -1,4 +1,42 @@
 {
-  "components": {},
-  "dependencies": {}
+  "components": {
+    "plugins": {
+      "ReachCheck": {
+        "src": "src/plugins/ReachCheck",
+        "test": "test/plugins/ReachCheck"
+      }
+    },
+    "visualizers": {
+      "panels": {
+        "src": "panels/panels/panelsPanel",
+        "title": "panels",
+        "panel": "src/visualizers/panels/panels",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/panels"
+      },
+      "SimSM": {
+        "src": "panels/SimSM/SimSMPanel",
+        "title": "SimSM",
+        "panel": "src/visualizers/panels/SimSM",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/SimSM"
+      }
+    },
+    "seeds": {
+      "StateMachine": {
+        "src": "src/seeds/StateMachine"
+      },
+      "MySeedName": {
+        "src": "src/seeds/MySeedName"
+      },
+      "check": {
+        "src": "src/seeds/check"
+      }
+    }
+  },
+  "dependencies": {
+    "plugins": {},
+    "visualizers": {},
+    "seeds": {}
+  }
 }

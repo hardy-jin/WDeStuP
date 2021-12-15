@@ -33,19 +33,19 @@ Follow these steps to add a new plugin:
 - for JS plugin: `npm run webgme new plugin MyPluginName`
 - for Python plugin: `npm run webgme new plugin -- --language Python MyPluginName`
 - exit container
-- copy webgme-setup.json `docker-compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
-- copy webgme-config `docker-compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
+- copy webgme-setup.json `docker compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
+- copy webgme-config `docker compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
 ### Adding new visualizer to your DS
 Follow these steps to add a new visualizer:
 - enter the container
 - `npm run webgme new viz MyVisualizerName`
 - exit container
-- copy webgme-setup.json `docker-compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
-- copy webgme-config `docker-compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
+- copy webgme-setup.json `docker compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
+- copy webgme-config `docker compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
 ### Adding new seed to your DS
 Follow these steps to add a new seed based on an existing project in your server:
 - enter the container
 - `npm run webgme new seed MyProjectName -- --seed-name MySeedName`
 - exit container
-- copy webgme-setup.json `docker-compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
-- copy webgme-config `docker-compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
+- copy webgme-setup.json `docker compose cp webgme:/usr/app/webgme-setup.json webgme-setup.json`
+- copy webgme-config `docker compose cp webgme:/usr/app/config/config.webgme.js config/config.webgme.js`
